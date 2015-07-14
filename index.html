@@ -6,9 +6,13 @@ layout: default
 {% for post in site.posts %}
 <div class="post-box">
   <div class="thumbnail">
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      <div class="thumbnail blankbox"></div>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+      <div class="thumbnail" style="background-color:{{ post.color }};"></div>
+      <span class="post-meta">
+        {{ post.title }}
+        <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+        {{ post.color }}
+      </span>
       </a>
   </div>
 </div>

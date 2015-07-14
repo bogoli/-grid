@@ -1,6 +1,8 @@
 /**
  * Site header
  */
+
+
 .site-header {
     height: 100%;
     width: 2%;
@@ -84,14 +86,34 @@
     float: left;
     vertical-align: middle;
     box-sizing: border-box;
-    padding-bottom: 25%;
-    background-color: #aaa;
-    border: 1px solid black;
-
-    padding: 10px;
+    height: 100%;
+}
+.thumbnail{
+    width: 100%;
+    overflow: hidden;
 }
 
+.thumbnail a{
+    float: left;
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+}
+.thumbnail a span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #aaa;
+    padding: 40px;
+    text-align: center;
+}
 
+.thumbnail a:hover span {
+    text-decoration: underline;
+}
 
 .post-meta {
     font-size: $small-font-size;
